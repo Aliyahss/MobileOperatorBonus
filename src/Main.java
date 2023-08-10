@@ -5,7 +5,8 @@ public class Main {
         int bonusAmount = replenishmentAmount / 100; //Количество бонусов
         int finalScore = replenishmentAmount + initialScore + bonusAmount;
 
-        if (replenishmentAmount >= 1000) { bonusAmount = replenishmentAmount / 100;
+        if (replenishmentAmount > 1000) {
+            bonusAmount = replenishmentAmount / 100;
             System.out.println("Бонусы =" + bonusAmount);
         } else {
             bonusAmount = 0;
